@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>存储选项</title>
+</head>
+
+<body id="home">
+   
+<h2>存储选项</h2>
+<p>
+	<ul>
+		<li><strong>压缩格式</strong>：这是一个用于选择压缩格式的弹出菜单。依赖于压缩文档的能力，您可以选择分成多个分卷和添加密码。 </li>
+		<li><strong>压缩等级</strong>：对于多数压缩格式，您都可以选择压缩强度。更强的压缩等级通常意味着更慢的压缩操作。 </li>
+		<li><strong>加密方式</strong>：一些格式（7-zip，zip，rar）可以选择加密。从这个弹出菜单中选择加密方式。如果不是特别需要，请不要使用弱的 zip 加密，因为您的数据实际上根本没有得到保护。多数情况下您应该使用 强（AES-256）的加密方式。AES-256 通常被认为具备军用级的加密强度，这意味着目前还没有已知的方法能够破解这类压缩文件的密码。若果您选择 强（AES-256）并且是包含头加密的加密方式，那么甚至连文件名都会被加密，如果不输入密码，文件就无法被列出。不要丢失或者忘记您的密码，因为如果真的丢失了密码，没有人能够帮助您。</li>
+		<li><strong>密码</strong>：点按 <i>设定</i> 按钮来输入您的密码。如果该文本框置空，BetterZip 会在需要的时候询问您密码。</li>
+		<li><strong>分卷大小</strong>：若要将文件分割成多个分卷，在文本框中输入分卷的大小，并且从下拉菜单中选择一个单位（KB、MB、GB）。如果您不想分割压缩文件，将文本框置空即可。</li>
+		<li><strong>附加参数</strong>：一些格式具备更多的选项可供调整，您可以通过这里设置它们，但是请确定您知道自己在做什么。</li>
+		<li><strong>完成后运行脚本</strong>：创建了压缩文件之后，BetterZip 可以执行这个脚本或者命令，压缩文件的文件名被作为参数传递。</li>
+		<li><strong>从压缩文件中移除Mac特殊文件</strong>：BetterZip 还可以从压缩文件中移除Mac特殊的文件或文件夹。一个在Mac上创建的 zip 文件通常包含许多隐藏的文件和文件夹，它们只被Mac使用，例如 Finder 设置。对于 Windows 和 Linux 用户来说，这些文件毫无价值。</li>
+		<li><strong>存储之前执行 <a href="clean.html">清理</a></strong>。</li>
+		<li><strong>设置压缩文档的日期为压缩文件中的最新日期</strong>：正如该选项所说的，如果您创建一个只包含一个日期为2004年11月8日的文件的压缩文件，压缩文件的日期通常为今日。如果您勾选这个选项，压缩文件的日期就是2004年11月8日。</li>
+</p>
+
+</body>
+</html>

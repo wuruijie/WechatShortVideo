@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>Personnaliser BetterZip</title>
+</head>
+
+<body id="home">
+   
+<h2>Changer l'apparence de BetterZip</h2>	
+<h3>Mode d'affichage</h3>
+<p>
+	BetterZip a deux manières d'afficher le contenu d'une archive :<ul>
+		<li><b>Liste classique (&#x2318;1)</b><br/>
+		Tous les fichiers et dossiers sont affichés sous forme d'une liste traditionnelle ne tenant pas compte de la hiérarchie de l'archive. Si vous utilisez ce mode, vous devriez afficher la colonne <em>Chemin</em>. Ce mode est particulièrement utile si vous avez besoin de trier des fichiers sans vous inquiéter de leur localisation dans la hiérarchie de l'archive (pour effectuer un tri par date de modification, par exemple).</li>
+		<li><b>Arborescence (&#x2318;2)</b><br/>
+		Les fichiers sont affichés dans un arbre, rangés dans leurs dossiers respectifs, comme la vue Colonne du Finder.</li>
+	</ul>
+</p>
+<h3>Taille de la police</h3>
+<p>
+Vous pouvez augmenter la taille de la police utilisée dans la fenêtre principale en appuyant sur &#x2318;+ et vous la diminuer en appuyant sur &#x2318;-.</p>
+
+
+<h2>Personnaliser BetterZip &mdash; Les Préférences</h2>	
+<h3>Onglet Général</h3>	
+<p>
+	<strong>Démarrer avec une archive vierge</strong><br/>
+	Activez cette option si vous souhaitez que BetterZip s'ouvre sur une archive vide à chaque démarrage. Lorsque vous ouvrez une archive existante, les fenêtres d'archive vide dont il est question sont réutilisées pour en afficher le contenu.<br/>
+</p>   
+<p>
+	<strong>Quitter après la fermeture de la dernière fenêtre ouverte</strong><br/>
+	Activez cette option si vous souhaitez que BetterZip soit automatiquement quitté dès que toutes les fenêtres ont été fermées.<br/>
+</p>   
+<p>
+	<strong>Décompresser automatiquement à l'ouverture</strong><br/>
+	Au lieu d'afficher le contenu d'une archive ouverte depuis le Finder, BetterZip peut la décompresser immédiatement. Ce procédé est appelé<em> Extraction directe</em>. Activez cette option si vous souhaitez activer l'extraction directe. Vous pouvez ponctuellement activer/désactiver cette fonction en maintenant les touches ^&#x2318; (ctrl+cmd) enfoncées lors de l'ouverture d'une archive.<br/>
+</p>   
+<p>
+	<strong>Réinitialiser les messages &quot;Ne plus afficher&quot;</strong><br/>
+	Appuyez sur ce bouton pour que BetterZip affiche à nouveau tous les messages d'alertes que vous aviez précédemment décidé d'ignorer définitivement en cochant la case &quot;Ne plus afficher&quot;.<br/>
+</p>   
+
+
+<h3>Onglet Modules</h3>	
+<p>
+	Pour le moment, BetterZip ne peut utiliser qu'un module externe qui est <a href="rar.html">rar</a> et qui vous permet de  <strong>créer</strong> des archives rar. L'extraction est intégrée directement à BetterZip, vous n'avez donc pas besoin d'un module externe pour cela.</p>
+
+<h3>Onglet Nettoyage</h3>	
+<p>
+	La fonction <i>Nettoyage</i> vous permet de supprimer certains fichiers automatiquement d'une archive. Si vous utilisez un système de gestion de versions tel que CVS ou Subversion, vous ne souhaitez probablement pas inclure dans vos archives les dossiers cachés CVS et .svn. BetterZip utilise des modèles prédéfinis de noms de fichiers (expressions régulières, ou rationnelles) pour trouver de tels fichiers et les éliminer d'un seul clic. Dans cet onglet, vous pouvez ajouter de nouveaux modèles de noms de fichiers (ou expressions régulières) en cliquant sur le bouton + sous la liste ou en enlever en cliquant sur le bouton -. Cliquez sur un des modèles pour l'éditer.</p>
+<p>
+BetterZip peut filtrer les fichiers à deux occasions : avant l'enregistrement ou après l'extraction d'une archive. Utilisez les cases à cocher dans la liste pour définir les moments où chaque modèle de nom de fichier doit être utilisé.</p>
+<p>Pour en savoir plus sur les expressions rationnelles et apprendre à les utiliser, consultez cet <a href="http://fr.wikipedia.org/wiki/Expression_rationnelle">article sur Wikipédia</a> ou utilisez <a href="http://www.google.com/search?q=expression rationnelle">Google</a> pour trouver de nombreux exemples.</p>
+
+<h3>Onglet Types de fichiers</h3>	
+<p>
+	Dans la liste, tous les<a href="filetypes.html"> types de fichiers</a> que BetterZip peut gérer sont affichés. Vous pouvez choisir lesquels vous souhaitez effectivement associer à BetterZip. Quand vous choisissez de définir BetterZip comme application préférée pour un type de fichier, l'application le gérant précédemment est sauvegardée et vous pouvez la restaurer de la même manière que vous avez associé BetterZip à ce type de fichier.<br/>
+</p>
+
+<h3>Onglet Mots de passe</h3>	
+<p>
+	Dans cet onglet, vous pouvez gérer les mots de passe que vous utilisez souvent. Consultez la page <a href="passwords.html">Le gestionnaire de mots de passe d'archive</a> pour plus d'informations.
+</p>
+
+<h3>Onglet Avancé</h3>	
+<p>
+	Dans cet onglet vous pouvez gérer quelques options complémentaires :<br/>
+</p>
+<p>
+<strong>Nombre d'opérations simultanées </strong>: Quand vous utilisez la file d'attente d'opérations à effectuer sur une archive, BetterZip peut limiter le nombre d'opérations exécutées en même temps. Si cette valeur est définie sur Automatique (recommandé), macOS décidera du nombre d'opérations simultanées autorisées en fonction des ressources système disponibles.</p>
+<p>
+	<strong>Dossier temporaire</strong><br/>
+Vous pouvez définir la localisation du dossier temporaire. Si vous créez fréquemment des archives contenant des fichiers stockés sur des disques autres que celui contenant le système de démarrage, définir le dossier temporaire un autre disque accélérera notablement l'ajout de fichiers aux archives.</p>
+<p>
+	<strong>Ouvrir les fichiers d'un type inconnu avec</strong><br/>
+Quand vous souhaitez ouvrir un fichier d'un type inconnu, BetterZip utilisera automatiquement cette application (par défaut, le Finder). Si vous utilisez un logiciel de remplacement pour le Finder - comme Path Finder -, vous pouvez définir cette application ici. Vous pouvez également utiliser un éditeur hexadécimal ou un traitement de texte, par exemple.</p>
+
+</body>
+</html>

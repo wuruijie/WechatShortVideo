@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>Sicherungsoptionen</title>
+</head>
+
+<body id="home">
+   
+<h2>Sicherungsoptionen</h2>
+<p>
+	<ul>
+		<li><strong>Archivformat</strong>: Wählen Sie als Erstes aus diesem Einblendmenü das Format, in dem das Archiv gesichert werden soll. Abhängig von dem gewählten Format können Sie zusätzlich auswählen, ob das Archiv mit einem Passwort geschützt werden soll, und ob es auf mehrere Dateien aufgeteilt werden soll. </li>
+		<li><strong>Kompression</strong>: Bei einigen Formaten können Sie auch die Kompressionsstärke auswählen. Bessere Kompression bedeutet hier immer eine niedrigere Arbeitsgeschwindigkeit. </li>
+
+		<li><strong>Passwortschutz</strong>: Einige Formate (7-zip, zip, rar) können verschlüsselt werden. Wählen Sie die gewünschte Methode in diesem Einblendmenü. Wenn nicht unbedingt erforderlich, verwenden Sie nicht die schwache Zip-Verschlüsselung, da Ihre Daten damit nicht besonders sicher sind. Wählen Sie besser die starke (AES-256) Verschlüsselung. Im Moment ist keine Methode bekannt diese Verschlüsselung zu brechen. Wenn Sie <em>Stark (AES-256) mit verschlüsselter Liste</em> (nur für die Formate 7-zip und rar verfügbar) wählen, werden sogar die Dateinamen verschlüsselt, und der Inhalt des Archivs kann erst nach Passworteingabe angesehen werden.<strong>Anmerkung:</strong>Das macOS Archivierungsprogramm unterstützt nur schwache Zip-Verschlüsselung, die meisten anderen Archivierungsprogramme unterstützten aber alle Typen.</li>
+		<li><strong>Passwort</strong> (nur in den Presets als Voreinstellung wählbar): Klicken Sie auf <i>Setzen</i>, um ein Passwort einzugeben. Wenn Sie dieses Feld leer lassen, fordert BetterZip Sie später auf, ein Passwort einzugeben.</li>
+		<li><strong>Teilen mit</strong>: Um ein Archiv auf mehrere Teile mit vorgegebenen Größen aufzuteilen, geben Sie hier die Größe der Teile ein, und wählen Sie aus dem Einblendmenü daneben die Einheit aus (KB, MB, GB). Wenn Sie das Archiv nicht aufteilen wollen, lassen Sie dieses Feld einfach leer.</li>
+		<li><strong>Zusätzliche Optionen</strong>: Einige Formate können mit zusätzlichen Optionen weiter angepasst werden. Geben Sie diese hier ein.</li>
+		<li><strong>Archivkommentar</strong>: Bei Archiven im ZIP- oder RAR-Format können Sie einen Kommenatr mitspeichern. Geben Sie bei der Preset-Konfiguration einen Kommentar direkt in dem Textfeld ein oder klicken Sie auf die kleine Bearbeiten-Schaltfläche daneben, um in einem größeren Editor mehrzeilige Kommentare einzugeben.</li>
+		<li><strong>Skript am Ende</strong>: Nach erfolgreicher Beendigung der Sicherungsoperation, führt BetterZip das hier angegebene Skript aus und übergibt diesem als Parameter den Dateinamen (inkl. Pfad) des Archivs.</li>
+		<li><strong>Mac spezifische Dateien aus dem Archiv entfernen</strong>: BetterZip kann beim Sichern Mac spezifische Dateien und Ordner (z.B. Finder-Einstellungen und Resource Forks) ausfiltern, die für Windows- oder Linux-Benutzer nur störend sind.</li>
+		<li><strong><a href="clean.html">Muster ausschließen</a></strong>: Geben Sie hier ein Suchmuster an, um Dateien zu finden, die nicht ins Archiv gepackt werden sollen.</li>
+		<li><strong>Muster ist ein regulärer Ausdruck</strong>: Wählen Sie diese Option, damit BetterZip das eingebene Suchmuster als regulären Ausdruck interpretiert und nicht als einfach Dateisuchmuster (mit * und ?).</li>
+		<li><strong>Das Datum des Archivs auf das jüngste Datum setzen</strong>: Wenn Sie eine Datei komprimieren, deren Änderungsdatum der 8. November 2004 ist, hat das Archiv normalerweise das aktuelle Datum als Änderungsdatum. Wenn Sie aber diese Option aktivieren, setzt BetterZip als Datum des Archivs den 8. November 2004. </li>
+		<li><strong>Das Fenster nach erfolgreicher Operation schließen</strong>.</li>
+		<li><strong>Individuelle Archive beim Packen über die Warteschlange erzeugen</strong>: Wenn Sie mit diesem Preset mehrere Objekte über die Warteschlange komprimieren, wird jedes Top-Level-Objekt in eine eigenes Archiv gepackt. Warteschlangenoperationen umfassen das Ziehen auf die Drop-Leiste, Dienste, Automator Actions, die BetterZip-Schaltfläche im Finder und alle anderen Operationen die über das Warteschlangenfenster abgewickelt werden.</li>
+		<li><strong>Bei einem einzelnen Ordner nur dessen Inhalt packen</strong>: Wenn ein einzelner Ordner komprimiert wird, den Ordner selber nicht in das Archiv packen, sondern nur dessen Inhalt. Zusammen mit der obigen Einstellung für "individuelle Archive" können Sie nun eine Anzahl von Ordnern auswählen und komprimieren, um eine Anzahl von Archiven zu erhalten, die jeweils die Ordnerinhalte beinhalten.</li>
+</p>
+
+</body>
+</html>

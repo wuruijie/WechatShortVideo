@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>Customizing BetterZip</title>
+</head>
+
+<body id="home">
+   
+<h2>Changing BetterZip's Appearance</h2>	
+<h3>List Mode</h3>
+<p>
+	BetterZip has two view modes to display an archive's contents: 
+	<ul>
+		<li><b>Flat list (&#x2318;1)</b><br/>
+			All files and folders are shown in a flat list. If you use this mode, you should display the <i>path</i>
+			column. This mode is useful, if you need to sort the files regardless of their position within the 
+			folder hierarchy (e.g., by modification date). 
+		</li>
+		<li><b>Outline view (&#x2318;2)</b><br/>
+			The files are shown in a tree-like list, like the Finder's column view. 
+		</li>
+	</ul>
+</p>
+<h3>Font Size</h3>
+<p>
+	You can increase the font size used in the main window by pressing &#x2318;+ and decrease it pressing &#x2318;-.
+</p>
+
+
+<h2>Customizing BetterZip &mdash; the Preferences</h2>	
+<h3>Tab General</h3>	
+<p>
+	<strong>Start with an empty document </strong><br/>
+	Check this option, if BetterZip should open an empty archive window when started. Empty archive windows are reused when you open an archive.<br/>
+</p>   
+<p>
+	<strong>Start with the Drop Bar</strong><br/>
+	Check this option, if BetterZip should open the Drop Bar when started. You can open the Drop Bar at any time by choosing Window > Drop Bar/Queue from the menu.<br/>
+</p>   
+<p>
+	<strong>Quit after last window closed</strong><br/>
+	Check this option, if you want BetterZip to quit after you closed the last window.<br/>
+</p>   
+<p>
+	<strong>Always open archives in Direct Mode</strong><br/>
+	If possible for this archive format, open it in <a href="directmode.html">Direct Mode</a>.
+</p>   
+<p>
+	<strong>Show BetterZip button in Finder windows</strong><br/>
+	Check this option, if you want the BetterZip button for quickly compressing and extracting with your presets in the toolbar of all Finder windows.<br/>
+</p>   
+<p>
+	<strong>Opening an archive from the Finder immediately extracts it</strong><br/>
+	Instead of displaying the archive's contents, BetterZip can immediately extract it when opened in the Finder. You can toggle the default behavior temporarily by holding down ^&#x2318; (ctrl+cmd) while opening the archive.
+</p>
+<p>
+	<strong>When modifying an archive that currently has no Mac specific stuff in it: ...</strong><br/>
+	Choose which action should be taken when you add new items to an archive that doesn't contain any Mac specific files, including Finder settings (.DS_Store files), and resource forks and metadata (._ files). These are all unwanted on other platforms, but Mac users will want to add these files.<br/>
+</p>   
+<p>
+	<strong>Reset "Don't Ask Me" Warnings</strong><br/>
+	Click this button to have BetterZip display all alert panels again which you dismissed at some time checking the box "Don't show again".<br/>
+</p>   
+
+<h3>Tab Presets</h3>	
+<p>
+	This is BetterZip's most powerful feature, so it's got its own <a href="presets.html">help page</a>. 
+</p>
+
+<h3>Tab Helpers</h3>	
+<p>
+	At the moment BetterZip can only use one external helper tool and that is <a href="rar.html">rar</a> which lets you <strong>create</strong> rar archives. Extraction is built right into BetterZip, so you don't need an external tool for this.
+</p>
+
+<h3>Tab Filtering</h3>
+<p>
+	On this tab you can manage your filter patterns that you can choose from the combobox in the filter pattern entry. <a href="clean.html">Read more about filtering</a>.
+</p>
+
+<h3>Tab File Types</h3>	
+<p>
+	In this list all <a href="filetypes.html">file types</a> that BetterZip can handle are displayed. You can choose which types actually to connect with BetterZip. If you select a type, the previous handler will be saved and you can restore it by deselecting the type again.<br/>
+</p>
+
+<h3>Tab Passwords</h3>	
+<p>
+	On this tab you can manage your often used passwords. See the page <a href="passwords.html">The Archive Password Manager</a> for more details.
+</p>
+
+<h3>Tab Advanced</h3>	
+<p>
+	On this tab you can set a few more options:<br/>
+</p>
+<p>
+	<strong>Concurrent archive operations</strong>: When you use the archive operations queue, BetterZip can throttle the number of operations that are executed at the same time. If this value is set to Auto (recommended), macOS will decide how many operations to execute depending on free system resources.
+</p>
+<p>
+	<strong>Temporary folder</strong><br/>
+	You can set the temporary folder location. If you frequently create archives from files on disks other than the system disk, setting this folder to reside on the secondary disk will speed up adding files to new archives considerably.
+</p>
+<p>
+	<strong>Open unknown file types with</strong><br/>
+	When you view a file of an unknown type, BetterZip will open the file with this application (by default the Finder). If you use a replacement for Finder like Path Finder, you can set this application here. Other possible uses of this setting are hex editors or text editors.
+</p>
+
+<p>
+	<strong>Post status messages to the Notification Center</strong><br/>
+	BetterZip can notify you through the macOS Notification Center when operations in the queue have finished.
+</p>
+
+</body>
+</html>

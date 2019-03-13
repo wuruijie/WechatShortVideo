@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>Options de préréglage de sauvegarde</title>
+</head>
+
+<body id="home">
+   
+<h2>Options de préréglage de sauvegarde</h2>
+<p>
+<ul>
+		<li><strong>Format de l'archive </strong>: Un menu vous permet de choisir quel format vous souhaitez utiliser pour la sauvegarde de l'archive. Selon les caractéristiques du format retenu, vous pourrez aussi choisir de crypter avec un mot de passe l'archive ou de scinder l'archive en plusieurs morceaux.</li>
+		<li><strong>Compression </strong>: Pour la plupart des formats, vous pouvez choisir la &quot;force&quot; de compression. Une meilleure compression demande plus de temps.</li>
+		<li><strong> Méthode de cryptage </strong>: Certains formats (7-zip, zip, rar) autorisent le cryptage. Choisissez une méthode de cryptage à l'aide du menu. Sauf si cela est absolument nécessaire, n'utilisez pas le cryptage zip faible, car vos données ne sont pas réellement protégées avec cette option. La plupart du temps, vous souhaiterez utiliser le cryptage fort (AES-256). AES-256 est souvent qualifié de longueur de cryptage de niveau militaire, traduisant le fait qu'il n'existe à l'heure actuelle aucun moyen connu de &quot;casser&quot; cette clef de cryptage. Si vous choisissez le cryptage fort (AES-256) avec cryptage des en-têtes, même les noms de fichiers seront cryptés et ne pourront être listés sans la saisie du mot de passe de codage. N'oubliez pas le mot de passe utilisé, car personne ne pourra alors vous permettre de le retrouver.</li>
+		<li><strong>Mot de passe </strong>: Cliquez sur le bouton<i> Définir </i>pour saisir le mot de passe. Si vous laissez ce champ vide, BetterZip vous demandera le mot de passe à associer à l'archive dès que cela sera nécessaire.</li>
+		<li><strong>Scinder en plusieurs éléments de taille </strong>: Pour séparer l'archive plusieurs éléments de taille moindre, saisissez la taille maximum de chaque élément dans le champ et choisissez dans le menu une unité de taille (Ko, Mo, Go). Si vous ne souhaitez pas scinder votre archive, laissez ce champ vide.</li>
+		<li><strong>Paramètres complémentaires :</strong> Certains formats peuvent être personnalisés avec plus d'options. Vous pouvez les définir ici, mais soyez sûr de ce que vous faites.</li>
+<li><strong>Exécuter ce script à la fin</strong>: Après la création de l'archive, BetterZip exécutera ce script shell ou cette commande, en lui passant en paramètre le nom de l'archive créée.</li>
+		<li><strong>Supprimer les données Mac des archives </strong>: BetterZip peut aussi effacer des archives les fichiers et dossiers créés spécifiquement par un Mac pour les Mac. Un fichier Zip créé sur un Mac contient habituellement un certain nombre de fichiers cachés que seuls les Mac comprennent (par exemple, les réglages du Finder et des paquets de ressources). Pour des utilisateurs de Windows ou de Linux, ces fichiers sont encombrants et inutiles.</li>
+		<li><strong><a href="clean.html">Nettoyer</a> l'archive avant de l'enregistrer</strong>.</li>
+		<li><strong>Définir la date de l'archive à celle du dernier fichier qu'elle contient </strong>: Réalise exactement ce que le titre dit. Si vous créez une archive dont le fichier le plus récent  date du 8 novembre 2004, la date de l'archive serait normalement définie à la date du jour de création de l'archive. Si vous activez cette option, la date de l'archive sera définie au 8 novembre 2008.</li>
+</body>
+</html>

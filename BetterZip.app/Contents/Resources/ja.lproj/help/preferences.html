@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>BetterZip をカスタマイズする</title>
+</head>
+
+<body id="home">
+   
+<h2>BetterZip の見た目を変更する</h2>	
+<h3>リストモード</h3>
+<p>
+	BetterZip にはアーカイブの内容を表示するモードが二種類あります: 
+	<ul>
+		<li><b>フラットリスト表示 (&#x2318;1)</b><br/>
+			ファイルやフォルダの階層構造を無視して、同列に並べて表示します。このモードを使用する場合は、<i>パス</i>
+			カラムも表示した方がよいでしょう。フォルダの階層構造を無視してファイルを並べ替えて表示させたい場合 (例えば、最終更新日時で並べ替える) などに有効なモードです。 
+		</li>
+		<li><b>アウトライン表示 (&#x2318;2)</b><br/>
+			Finder のカラム表示のようにファイルはツリー状のリストで表示されます。
+		</li>
+	</ul>
+</p>
+<h3>フォントサイズ</h3>
+<p>
+	&#x2318;+ を押せば、メインウインドウで使用するフォントのサイズを大きくすることが出来、&#x2318;- を押すと、小さくすることができます。
+</p>
+
+
+<h2>BetterZip をカスタマイズする &mdash; 環境設定</h2>	
+<h3>全般タブ</h3>	
+<p>
+	<strong>起動時に新規アーカイブを開く</strong><br/>
+	このオプションがチェックされていると、BetterZip は起動時に新規アーカイブウインドウを開きます。新規アーカイブウインドウを何かアーカイブを開くとその表示に再利用されます。<br/>
+</p>   
+<p>
+	<strong>ウインドウがすべて閉じられたら終了する</strong><br/>
+	このオプションがチェックされていると、開いているウインドウがすべて閉じられると、BetterZip は終了するようになります。<br/>
+</p>   
+<new>
+<p>
+	<strong>Always open archives in Direct Mode</strong><br/>
+	If possible for this archive format, open it in <a href="directmode.html">Direct Mode</a>.
+</p>   
+<p>
+	<strong>Create individual archives when compressing using the operations queue</strong><br/>
+	Instead of compressing all selected files into one archive, BetterZip can compress each item into its own archive. If an item is a folder all its contents will, of course, be put into the same archive as the folder.
+<p>
+	<strong>Opening an archive from the Finder immediately extracts it</strong><br/>
+	Instead of displaying the archive's contents, BetterZip can immediately extract it when opened in the Finder. You can toggle the default behavior temporarily by holding down ^&#x2318; (ctrl+cmd) while opening the archive.
+</p>
+</new>   
+<p>
+	<strong>"今後確認しない" とした警告をリセット</strong><br/>
+	このボタンをクリックすると、"今後確認しない" をチェックした警告パネルすべてを BetterZip が再度表示するようになります。<br/>
+</p>   
+
+
+<h3>ヘルパータブ</h3>	
+<p>
+	今のところ、BetterZip は外部ツールをひとつ使えるだけです。それが、<a href="rar.html">rar</a> です。rar があれば、rar アーカイブを<strong>作成</strong>することができます。展開だけでしたら、BetterZip に組み込みの機能がありますので、この外部ツールは必要ありません。
+</p>
+
+<new>
+<h3>Tab Filtering</h3>	
+<p>
+	On this tab you can manage your filter patterns that you can choose from the combobox in the filter pattern entry. <a href="clean.html">Read more about filtering</a>.
+</p>
+</new>
+
+<h3>ファイルタイプタブ</h3>	
+<p>
+	このリストには、BetterZip が扱うことのできる<a href="filetypes.html">ファイルタイプ</a>がすべて表示されています。ここでは BetterZip と実際に関連づけするタイプをどれにするか選択することができます。どれかタイプを選択すると、BetterZip はそれまで関連付けられていたアプリケーションの情報を保存し、そのタイプを関連付けから外すときに元に戻します。<be/>
+</p>
+
+<h3>パスワードタブ</h3>	
+<p>
+	このタブでは、よく使うパスワードを管理することができます。詳しくは。<a href="passwords.html">アーカイブパスワードマネージャー</a>をご覧下さい。
+</p>
+
+<h3>高度な設定タブ</h3>	
+<p>
+	このタブではさらにいくつかのオプションを設定することができます。<br/>
+</p>
+<p>
+	<strong>同時に実行可能なアーカイブオペレーションの数</strong>: アーカイブオペレーションキューを使用すると、BetterZip は同時に実行される処理の数を限定することができます。この値が自動 (推奨値) に設定されていると、macOS はシステムの空きリソースに応じて実行する処理の数を決定します。
+</p>
+<p>
+	<strong>一時利用フォルダ</strong><br/>
+	一時的に利用するフォルダの場所を設定することができます。システムディスク以外のディスク上のファイルからアーカイブを頻繁に作成するのであれば、一時利用フォルダをシステムディスク以外のディスクに設定することで、新しいアーカイブにファイルを追加するスピードが上がります。
+</p>
+<p>
+	<strong>ファイルタイプが不明の項目を開くアプリケーション</strong><br/>
+	不明なタイプのファイルを表示する際に、BetterZip がファイルを開くアプリケーションを指定します (デフォルトは、Finder です)。Finder の代わりに Path Finder などの他のアプリケーションを使用するなら、ここでそのアプリケーションを設定します。そのほかにここで指定するものがあるとすれば、バイナリエディタやテキストエディタでしょうか。
+</p>
+
+<new>
+<p>
+	<strong>Post status messages to the Notification Center</strong><br/>
+	BetterZip can notify you through the macOS Notification Center when operations in the queue have finished.
+</p>
+</new>
+
+</body>
+</html>

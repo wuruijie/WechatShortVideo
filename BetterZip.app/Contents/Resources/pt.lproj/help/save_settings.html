@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>Opções de Salvamento</title>
+</head>
+
+<body id="home">
+   
+<h2>Opções de Salvamento</h2>
+<p>
+	<ul>
+		<li><strong>Formato</strong>: permite a escolha do formato de salvamento. Dependendo dos recursos do formato, você pode escolher se deseja salvar o arquivo comprimido em vários volumes e se deseja usar criptografia por senha; </li>
+		<li><strong>Compressão</strong>: você pode escolher a intensidade de compressão para a maioria dos formatos. Uma compressão melhor sempre resulta em uma operação mais lenta; </li>
+		<li><strong>Criptografia</strong>: alguns formatos (7-ZIP, ZIP, RAR) podem ser criptografados. Use uma criptografia ZIP fraca somente se absolutamente necessário, pois os dados não ficarão realmente seguros. Na maioria das vezes, é preferível usar a criptografia Forte (AES-256) — também conhecida como criptografia de nível militar, o que significa que não há maneira conhecida de burlar esse tipo de criptografia atualmente. Se você escolher a criptografia Forte (AES-256) com criptografia de cabeçalho (disponível apenas em 7-Zip e RAR), até os nomes dos itens serão criptografados e não poderão ser listados sem que a senha correta seja digitada. Não perca ou esqueça as suas senhas, pois ninguém poderá ajudar você. <strong>Nota:</strong> o Utilitário de Compressão do macOS é compatível apenas com a criptografia ZIP fraca, mas a maioria dos utilitários de arquivos comprimidos de outros desenvolvedores são compatíveis com todos os tipos;</li>
+		<li><strong>Senha</strong>: clique em Definir para digitar uma senha. Se você deixar esse campo em branco, o BetterZip solicitará uma senha quando necessário;</li>
+		<li><strong>Dividir em volumes de</strong>: para dividir o arquivo comprimido em vários volumes, digite o tamanho desejado no campo de texto e escolha uma unidade (KB, MB, GB) no menu local ao lado. Caso não queira dividir o arquivo comprimido, deixe o campo em branco;</li>
+		<li><strong>Parâmetros adicionais</strong>: alguns formatos podem ter mais opções. Você pode digitá-las nesse campo, mas certifique-se de saber o que faz;</li>
+		<li><strong>Comentários</strong>: os formatos ZIP e RAR permitem a adição de comentários ao arquivo comprimido.  Adicione o comentário diretamente no campo de texto ou clique no botão Editar ao lado do comentário para ver um editor de comentários maior;</li>
+		<li><strong>Executar script ao concluir</strong>: depois de criar o arquivo comprimido, o BetterZip executará o script de shell ou comando digitado, passando o nome do arquivo comprimido; </li>
+		<li><strong>Remover itens invisíveis dos arquivos comprimidos</strong>: o BetterZip também pode remover itens invisíveis do Mac do arquivo comprimido. Um ZIP criado em um Mac normalmente contém vários itens ocultos que apenas outros Macs entendem, como ajustes do Finder e ramificações de recurso. Para usuários de Windows ou Linux, esses itens são completamente inúteis;</li>
+		<li><strong><a href="clean.html">Excluir padrões</a></strong>: defina padrões para fazer a correspondência de itens que não devem ser incluídos no arquivo comprimido;</li>
+		<li><strong>Padrão é uma expressão regular</strong>: selecione para usar a correspondência por expressão regular ou desmarque para usar a correspondência por curingas * e ?;</li>
+		<li><strong>Definir data do arquivo comprimido pelo item mais recente</strong>: ao criar um arquivo comprimido de um item datado de 8 de novembro de 2004, normalmente o arquivo comprimido usará a data de hoje. Ative essa opção para que ele herde a data original do item mais recente;</li>
+		<li><strong>Fechar janela ao concluir corretamente</strong>;</li>
+		<li><strong>Criar arquivos comprimidos individuais ao usar fila de operações</strong>: se você usar esse pré-ajuste para comprimir vários itens através da fila de operações, cada item principal será salvo em um arquivo comprimido individual. As operações em fila incluem: soltar itens na Barra de Operações, serviços, ações do Automator, botão do BetterZip em janelas do Finder e qualquer outra operação que passe pela janela da fila de operações;</li>
+		<li><strong>Não incluir pasta raiz única no arquivo comprimido</strong>: se apenas uma pasta for incluída em um arquivo comprimido, a pasta pode ser omitida. Isso faz com que apenas o conteúdo da pasta seja incluído no arquivo comprimido. Essa opção também funciona com a opção de arquivos comprimidos individuais, descrita anteriormente. Por exemplo, você pode comprimir cinco pastas e obter cinco arquivos comprimidos apenas com os conteúdos das pastas, sem as pastas em si.</li>
+</p>
+
+</body>
+</html>

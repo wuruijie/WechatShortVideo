@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>ファイルのフィルタリングとアーカイブのクリーニング</title>
+</head>
+
+<body id="home"><a name="BetterZip_clean"></a>
+   
+<h2>ファイルのフィルタリングとパターンによる削除</h2>
+<p>
+	<i>パターンによる削除</i> は、アーカイブからあなたが定義しすることができるフィルターパターンに一致したファイルを自動的に取り除く機能です。CVS や Subversion といった、バージョン管理システムをお使いなら、おそらく、CVS フォルダや .svn フォルダといった非表示のフォルダをアーカイブに含めたくないと思われるのではないでしょうか。BetterZip は、フィルターパターンを使って（*や?を使った単純なファイルマッチングや正規表現）そのようなファイルを探しだして、ワンクリックで削除します。
+ 同様に、BetterZip は、アーカイブから展開するファイルをフィルタリングすることもできます。例) Windows がサムネールのあるフォルダに追加する Thumbs.db ファイルなど。
+</p>
+<p>
+	検索パターンの管理は、設定ウインドウの<i>フィルタリング</i>タブで行います。
+</p>
+<p>
+フィルターパターンを使ってファイルを削除するには、&#x2325; キーを押しながらツールバーの<em>削除</em>をクリックするか、メニューから<em>編集 » パターンによる削除</em>を選択します。正規表現、あるいはファイルマッチパターンのいずれも使用することができます。複数のファイルマッチパターンを使用する場合は、セミコロンでパターンを区切って列挙して下さい。例: *.o;*.log。ファイルのパスはパターンそれぞれとマッチングされます。
+</p>
+<p>
+ファイルの展開や、アーカイブへの追加から除外する際に、自動的にフィルターを適用するために、個別に<a href="presets.html">プリセット</a>.を定義することができます。
+</p>
+<p>
+	正規表現とは何で、それがどのように動作するのかを調べるのでしたら、<a href="http://en.wikipedia.org/wiki/Regular_expression">Wikipedia の記事</a> をご覧になるか、<a href="http://www.google.com/search?q=regular%20expressions">Google</a> で検索すれば、膨大な数のチュートリアルが見つかります。 
+</p>
+  
+</body>
+</html>

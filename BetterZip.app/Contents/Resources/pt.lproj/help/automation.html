@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>Integre o BetterZip 4 a ferramentas de produtividade</title>
+</head>
+
+<body id="home">
+<h1>Integre o BetterZip 4 a ferramentas de produtividade</h1>
+
+<h2>Ações do Automator</h2>
+
+<p>O BetterZip adiciona duas ações ao Automator:</p>
+
+<ul>
+	<li>Comprimir com BetterZip<p>Essa ação pode ser configurada ao selecionar um dos pré-ajustes de salvamento atuais. Ela requer itens como entrada e gera, como saída, arquivos comprimidos. </p></li>
+	<li>Extrair com BetterZip<p>Essa ação pode ser configurada ao selecionar um dos pré-ajustes de extração atuais. Ela requer arquivos comprimidos como entrada e gera, como saída, os itens contidos no arquivo comprimido. </p></li>
+</ul>
+
+<h2>Serviços</h2>
+
+<p>Em versões anteriores, o BetterZip disponibilizava dois serviços para outros apps (e, obviamente, para o Finder) através do menu Serviços. O BetterZip 4 permite que você adicione quantos serviços desejar ao menu de Serviços. Acesse o painel Pré-Ajustes das preferências do BetterZip, escolha o pré-ajuste que deseja adicionar como serviço, clique no botão de engrenagem abaixo da lista de pré-ajustes, escolha “Adicionar este Pré-Ajuste ao menu de Serviços”, digite um nome para o serviço e clique em OK.</p>
+<p>Para usar um serviço, selecione itens no Finder e escolha o serviço no menu Finder > Serviços (ou no submenu Serviços do menu contextual).</p>
+<p>Você pode até definir atalhos de teclado para os serviços do BetterZip, como ^⌥⌘C para comprimir e ^⌥⌘E para extrair. Para definir os atalhos dos serviços, abra as Preferências do Sistema, clique em Teclado, selecione a aba Atalhos e, na lista à esquerda, selecione Serviços. Na lista à direita, role até “Arquivos e Pastas”, escolha Comprimir com BetterZip e clique em Adicionar Atalho. Um campo de texto editável é exibido. Digite o atalho desejado.</p>
+<p>Para facilitar a remoção de serviços, o menu do botão de engrenagem também oferece a opção “Mostrar Pasta de Serviços no Finder”.  Para remover um serviço, basta apagá‑lo dessa pasta.</p>
+
+<p>O BetterZip é compatível com alguns dos utilitários de produtividade mais populares:</p>
+
+<h2>Fluxos de Trabalho do Alfred</h2>
+
+<p>Caso não tenha instalado os fluxos de trabalho do <a href="https://www.alfredapp.com/">Alfred</a> ao abrir o BetterZip pela primeira vez, selecione o menu BetterZip > Instalar Fluxos de Trabalho do Alfred para instalá‑los e adicionar duas ações de arquivos ao Alfred: “Extrair com BetterZip” (para arquivos comprimidos) e “Comprimir com BetterZip” (para outros itens). Escolha uma das ações do BetterZip para ver uma lista de pré-ajustes. Escolha um dos pré-ajustes para que o BetterZip comprima ou extraia os itens.</p>
+
+<h2>Ações do LaunchBar</h2>
+
+<p>O <a href="https://www.obdev.at/products/launchbar/index.html">LaunchBar</a> é uma outra ferramenta de produtividade popular. As ações do BetterZip para o LaunchBar se assemelham mais a serviços do que os fluxos de trabalho do Alfred, já que são pré-configuradas com um pré-ajuste específico. Acesse o painel Pré-Ajustes das preferências do BetterZip, escolha o pré-ajuste que deseja adicionar como Ação do LaunchBar, clique no botão de engrenagem abaixo da lista de pré-ajustes, escolha “Adicionar este Pré-Ajuste ao LaunchBar 6”, digite um nome para o serviço e clique em OK.</p>
+
+<h2>Ações do Dropzone</h2>
+
+<p>A criação de ações do <a href="https://aptonic.com/">Dropzone</a> funciona da mesma forma que a do LaunchBar. Acesse o painel Pré-Ajustes das preferências do BetterZip, escolha o pré-ajuste que deseja adicionar como Ação do Dropzone, clique no botão de engrenagem abaixo da lista de pré-ajustes, escolha “Adicionar este Pré-Ajuste ao Dropzone 3”, digite um nome para o serviço e clique em OK.</p>
+
+<h2>Integração com o Hazel</h2>
+
+<p>O <a href="https://www.noodlesoft.com/">Hazel</a> é uma central de controle poderosa para várias tarefas de automação de arquivos e funciona perfeitamente com o BetterZip 4. A interação entre eles funciona melhor com AppleScripts. Embora o Hazel possua funções para criar arquivos comprimidos, o BetterZip pode ajudar caso você precise de formatos além de Zip ou queira usar criptografia.</p>
+
+<p>Este é um script simples que pode ser adicionado como ação ao Hazel para comprimir itens com o BetterZip: </p>
+
+<pre><code>tell application "BetterZip"
+	archive theFile with preset "ZipArrastado"
+end tell
+</code></pre>
+
+<p><code>theFile</code> é o arquivo fornecido pelo Hazel aos scripts, enquanto <code>ZipArrastado</code> é um pré-ajuste configurado no BetterZip. Caso prefira, você pode incluir todas as opções do BetterZip no script em vez de usar um pré-ajuste.</p>
+
+<h2>Controle do BetterZip via AppleScript</h2>
+
+<p>A compatibilidade com a linguagem AppleScript é a base de toda a automação do BetterZip. Para consultar a definição completa dos scripts, abra o Editor de Scripts, escolha Arquivo > Abrir Dicionário, selecione o BetterZip na lista e clique em Escolher.</p>
+
+<h2>Controle do BetterZip via Python</h2>
+
+<p>Você também pode usar Python (e outras linguagens) e criar scripts para o BetterZip através de Scripting Bridge. Mais adiante, você verá um exemplo rápido onde a matriz de nome de arquivo <code>items</code> é comprimida. Ao realizar um <i>queuedArchive</i> ou <i>queuedUnarchive</i>, um id que retorna a porcentagem do progresso (0–100) e pode ser usado em <i>calls</i> subsequentes é fornecido. O <i>call</i> de saída retorna os arquivos comprimidos produzidos. Pelo BetterZip ser encerrado dois segundos após o término das operações de script, não use um intervalo de pesquisa longo (principalmente no final).</p>
+
+<pre><code>
+import ScriptingBridge
+import time
+
+preset = 'Zip Limpo'
+
+BetterZip = ScriptingBridge.SBApplication.applicationWithBundleIdentifier_("com.macitbetter.betterzip")
+
+pid = BetterZip.queuedArchive_withPreset_withOptions_(items, preset, {})
+if pid > 0:
+	a = BetterZip.progress_(pid)
+	while a < 100 and BetterZip.isRunning():
+		a = BetterZip.progress_(pid)
+		# a is the percentage done; do something with it?
+		time.sleep (1)
+	archives = BetterZip.output_(pid)
+else:
+	# handle error
+</code></pre>
+
+</body>
+</html>

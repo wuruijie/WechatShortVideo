@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>Save Options</title>
+</head>
+
+<body id="home">
+   
+<h2>Save Options</h2>
+<p>
+	<ul>
+		<li><strong>Archive format</strong>: A popup button which lets you choose the format you wish to use for saving. Depending on the format's capabilities you can choose whether to save the archive in multiple volumes and whether to use passwords encryption. </li>
+		<li><strong>Compression</strong>: For most formats you can choose the compression strength. Better compression always means slower operation. </li>
+		<li><strong>Encryption method</strong>: Some formats (7-zip, zip, rar) can be encrypted. Choose the encryption method from this pop-up button. If not absolutely necessary, don't use the weak zip encryption, because your data is not really safe then. Most of the time you will want to use Strong (AES-256) encryption. AES-256 is often called military-grade encryption strength, meaning there is no known way to break such an archive at this time. If you choose Strong (AES-256) encryption with header encryption (only available with 7-zip and rar), even the filenames will be encrypted and can't be listed without entering the correct password. Don't lose or forget your passwords, because no one will be able to help you then. <strong>Note:</strong>The macOS Archive Utility only supports weak zip encryption, but most other 3rd party archivers support all types.</li>
+		<li><strong>Password</strong>: Click the <i>Set</i> button to enter your password. If you leave this field empty, BetterZip will ask you for a password when needed.</li>
+		<li><strong>Split into volumes of</strong>: To split the file into multiple volumes enter the size of the resulting files in the text field and choose a unit (KB, MB, GB) from the popup button. If you don't want to split your archive, leave the text field blank.</li>
+		<li><strong>Additional parameters</strong>: Some formats can be tweaked with more options. You can enter them here, but make sure you know what you are doing.</li>
+		<li><strong>Archive comment</strong>: The zip and rar format allow you to add comments to the archive. Add the comment directly in the text field or click the edit button next to it to get a larger editor to enter multi-line comments.</li>
+		<li><strong>Run script when done</strong>: After the archive creation, BetterZip will execute this shell script or command, passing in the archive's filename. </li>
+		<li><strong>Remove Mac specific stuff from archives</strong>: BetterZip can also remove Mac specific files and folders from the archive. A zip file created on a Mac usually contains a lot of hidden files and folders that only other Macs understand, e.g., Finder settings
+	and resource forks. For a Windows or Linux user these files are just garbage.</li>
+		<li><strong><a href="clean.html">Exclude patterns</a></strong>: Define patterns to match files against that shouldn't be included in the archive.</li>
+		<li><strong>Pattern is a regular expression</strong>: Check to use regular expression matching, unckeck to use wildcard matching using * and ?.</li>
+		<li><strong>Set the archive's date to the latest date in the archive</strong>: Does exactly that. If you create an archive of a file dated November 8th 2004 the archive's date will normally be today's date. If you set this option, the archive's date will be November 8th 2004.</li>
+		<li><strong>Close the window after finishing successfully</strong>.</li>
+		<li><strong>Create individual archives when using the operations queue</strong>: If you use this preset to compress multiple items through the queue, each top level item will be comressed into its own archive. Queue operations include dropping items on the Drop Bar, services, automator actions, the BetterZip button in Finder windows, and every other operation that goes through the queue window.</li>
+		<li><strong>Don't include the single root folder in the archive</strong>: If you compress one folder into an archive, the folder itself can be omitted and only its contents be added to the archive. This option also works with the "individual archives" option above. For example, compress five folders and get five archives of their contents without the folders themselves.</li>
+		<li><strong>Close the window after finishing successfully</strong>.</li>
+</p>
+
+</body>
+</html>

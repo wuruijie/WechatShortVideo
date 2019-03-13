@@ -1,0 +1,18 @@
+/* Class = "NSButtonCell"; title = "Install Alfred workflows"; ObjectID = "8Vg-HV-6iG"; */
+"8Vg-HV-6iG.title" = "Installer les workflows Alfred";
+
+/* Class = "NSButtonCell"; title = "Let's Go!"; ObjectID = "AZv-gH-0JZ"; */
+"AZv-gH-0JZ.title" = "C'est parti !";
+
+/* Class = "NSButtonCell"; title = "Add services for extraction and compression to the macOS services menu"; ObjectID = "CzZ-Ub-J5X"; */
+"CzZ-Ub-J5X.title" = "Ajouter les services pour l'extraction et la compression dans le menu Services de macOS";
+
+/* Class = "NSButtonCell"; title = "Tell macOS to open archives in BetterZip"; ObjectID = "bku-O5-RcK"; */
+"bku-O5-RcK.title" = "Dire à macOS d'utiliser BetterZip pour ouvrir les archives";
+
+/* Class = "NSButtonCell"; title = "Regularly check for updates"; ObjectID = "pAU-Gw-VpU"; */
+"pAU-Gw-VpU.title" = "Vérifier les mises à jour périodiquement";
+
+/* Class = "NSButtonCell"; title = "Add a BetterZip button to Finder's toolbar"; ObjectID = "t2Q-rY-XuF"; */
+"t2Q-rY-XuF.title" = "Ajouter un bouton BetterZip dans la barre d'outils du Finder";
+

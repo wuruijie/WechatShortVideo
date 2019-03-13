@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>个性化 BetterZip</title>
+</head>
+
+<body id="home">
+   
+<h2>改变 BetterZip 的外观</h2>	
+<h3>列表模式</h3>
+<p>
+	BetterZip 有两种方式来显示压缩文件的内容： 
+	<ul>
+		<li><b>平铺列表（&#x2318;1）</b><br/>
+			在平铺列表模式中，所有的文件和文件夹都会被显示。如果您使用这种模式，您应该显示 <i>路径</i>
+			列。这种模式在您想要为压缩文件中的文件排序（例如，通过修改时间排序），而忽略其文件夹层次时十分有用。
+		</li>
+		<li><b>大纲模式（&#x2318;2）</b><br/>
+			文件会被显示成一个树形的列表，就像 Finder 的列视图。
+		</li>
+	</ul>
+</p>
+<h3>字体大小</h3>
+<p>
+	您可以通过按下 &#x2318;+ 来增大或是按下 &#x2318;- 来减小主窗口的字体大小。
+</p>
+
+
+<h2>个性化 BetterZip &mdash; 偏好设置</h2>	
+<h3>通用选项卡</h3>	
+<p>
+	<strong>程序启动时打开新的空白压缩文件</strong><br/>
+	若要使 BetterZip 启动时打开一个空白的压缩文件窗口，则选择此项。当您打开一个压缩文件时，空的压缩文件窗口会被复用。<br/>
+</p>   
+<p>
+	<strong>当最后一个窗口关闭时退出</strong><br/>
+	若要使 BetterZip 在最后一个窗口关闭时退出，则选择此项。<br/>
+</p>   
+<p>
+	<strong>默认直接解压缩</strong><br/>
+	当在Finder中连按压缩文件时直接解压缩，而不是在BetterZip中显示其内容，这个就叫做 <em>直接解压缩</em>。 若要默认执行直接解压缩，则选择此项。打开压缩文件时按下 ^&#x2318; (ctrl+cmd) 就可以切换默认设置。<br/>
+</p>   
+<p>
+	<strong>重置“不再询问”的警告</strong><br/>
+	点按此按钮就会使得 BetterZip 重新开始显示所有的警告面板，这些面板是您在某个时候选择了“不再显示”从而被关闭的。<br/>
+</p>   
+
+
+<h3>程序助手选项卡</h3>	
+<p>
+	目前 BetterZip 只能使用一种外部程序助手，这就是 <a href="rar.html">rar</a>，它能使您 <strong>创建</strong> rar 压缩文件。解压缩功能是内建于 BetterZip 中的，因此您不需要为此使用外部程序助手。
+</p>
+
+<h3>清理选项卡</h3>	
+<p>
+	<i>清理</i> 功能允许您通过一种自动的方式从压缩文件中移除特定的文件。若果您使用类似于 CVS 或是 SVN 的版本控制系统，您也许不希望在压缩文件中出现隐藏的 CVS 和 .svn 文件夹。 
+	BetterZip 使用搜索模式（正则表达式）来搜索这些文件，并通过点按一个按钮来移除它们。
+	在该选项卡中，您可以通过点按列表下方的 + 按钮来添加或是通过 - 按钮来移除搜索模式。点按列表中的模式来编辑它。
+</p>
+<p>
+	BetterZip 可以在两种场景中使用筛选器：存储前和解压后。通过列表中对应的选框来决定匹配模式在何种场景使用。
+</p>
+<p>
+	若要了解何为正则表达式以及它们如何工作，阅读 <a href="http://en.wikipedia.org/wiki/Regular_expression">维基百科文章</a> 或搜索 <a href="http://www.google.com/search?q=regular%20expressions">谷歌</a> 来获得一系列教程。 
+</p>
+
+<h3>文件类型选项卡</h3>	
+<p>
+	在这个列表中，所有 BetterZip 支持的 <a href="filetypes.html">文件类型</a> 都会被显示。您可以选择 BetterZip 关联何种文件类型。若选择了一种类型，之前关联的程序会被保存，您可以通过取消选择该类型来恢复到原设置。<br/>
+</p>
+
+<h3>密码选项卡</h3>	
+<p>
+	在该选项卡，您可以管理您常用的密码。参见帮助页 <a href="passwords.html">压缩文件密码管理器</a> 来获得更多细节。
+</p>
+
+<h3>高级选项卡</h3>	
+<p>
+	在这个选项卡中您可以设置更多的选项：<br/>
+</p>
+<p>
+	<strong>同时进行的压缩操作数目</strong>： 当您使用压缩操作队列时，BetterZip 能够控制同时进行的操作数目。如果该值被设置为自动（推荐），macOS 会根据空闲的系统资源决定同时进行的操作数量。
+</p>
+<p>
+	<strong>临时文件夹</strong><br/>
+	您可以设置临时文件夹的位置。如果您频繁通过非系统盘的磁盘上的文件创建压缩文件，将该位置设置在第二磁盘上会显著提高创建新压缩文件的速度。
+</p>
+<p>
+	<strong>遇到位置类型文件时使用的程序</strong><br/>
+	当您尝试查看位置类型的文件时，BetterZip 会使用该程序打开（默认为 Finder）。 如果您使用了 Finder 的替代品，比如 Path Finder，您可以在这里设置这个程序。其他可能使用的程序是十六进制编辑器或文本编辑器。
+</p>
+
+</body>
+</html>

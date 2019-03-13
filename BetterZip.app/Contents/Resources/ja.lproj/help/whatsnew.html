@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+  <link href="../../help_files/screen.css" rel="stylesheet" type="text/css" />
+	<title>BetterZip 4 の変更点</title>
+</head>
+
+<body id="home">
+   
+<h2>BetterZip 4 へようこそ!</h2>
+<p>ここには、新世代 BetterZip の最も重要な新機能や機能拡張について簡単にまとめてあります。</p>
+<h3>Direct Mode</h3>	
+<p>
+	The biggest addition is the new <a href="directmode.html">Direct Mode</a> that lets you add files to archives without additional steps like saving. This is especially useful for large archives. You can also directly delete files from archives, rename files inside an archive, and move them around – all without recompressing. 
+</p>
+
+<h3>Extensive AppleScript Support</h3>	
+<p>
+	BetterZip 3 can be scripted using <a href="http://en.wikipedia.org/wiki/AppleScript">AppleScript</a>.
+</p>
+
+<h3>Archive Comments</h3>	
+<p>
+	Display, add, and update <a href="comments.html">archive comments</a> for zip and rar formats. BetterZip can also display the file comments that may be present in zip files. Either use the comment column in the main file list or open the preview sidebar.
+</p>
+
+<h3>Password Generator</h3>	
+<p>
+	BetterZip 3 features a password generator similar to Safari's. When BetterZip asks for a new password, a suggestion will be displayed in a popover. Click it to copy it to the password textfield.
+</p>
+
+<h3>Open and Extract Winmail.dat Files</h3>	
+<p>
+	No Mac user likes these beasties, though, we all get them regularly. BetterZip can open and extract these Outlook mail files.
+</p>
+
+<h3>Integrated QL Generator</h3>	
+<p>
+	The widely used BetterZip Quick Look Generator is now integrated into BetterZip. Using the QL generator is still free for all, but there is one neat new feature that requires a BetterZip license (after the trial expired): The new QL generator lets you click a file in the archive and it will hand command over to BetterZip which extracts and displays the clicked file. It's really nice.
+</p>
+
+<h3>XZ Archives</h3>	
+<p>
+	XZ archives are now supported as first class format, i.e., archives can be extracted and created.
+</p>
+
+<h3>Apple Disk Images (DMG Files)</h3>	
+<p>
+	Open, extract, and “quick look” Apple disk images (dmg files).
+</p>
+
+<h3>EPub Files</h3>	
+<p>
+	Open, extract, and modify ePub files. Note that BetterZip is not a replacement for a real ePub editor, but since ePub files are really just special zip files, why not use BetterZip to peek into or even modify them. You can of course invalidate your ePub file, if you don't know exactly what you are doing. So be careful and make backups.
+</p>
+
+<h3>Completely New Cleaning</h3>	
+<p>
+	<a href="clean.html">Cleaning</a> is no longer a one-fits-all function. Instead you can define custom cleaning patterns where ever you could previously check an option to clean with the same patterns. This means you can now define different presets with different cleaning patterns. 
+	
+	While BetterZip 2 could use regular expressions to filter files from archives, it's unnecessarily complicated 95% of the time for 99% of the users. Most of the time a simple *.o will suffice to keep o-files out of your archive. Therefore, I have added this simpler file mask matching with * and ?. Of course, regular expressions are still available for those rare cases where you really need them.
+</p>
+
+<h3>Smaller New Features</h3>	
+<ul>
+<li>BetterZip 3 lets you add your custom filename extensions to the list of handled <a href="filetypes.html">file types</a>.</li>
+<li>Test archives using the operations queue.</li>
+<li>Support for the macOS notification center.</li>
+<li>“Create folder” option for archives with only one root item too.</li>
+<li>Hidden settings can now be set conveniently on <a href="hidden_settings.html">this help page</a>.</li>
+<li>Added column file status and icon badges to show whether items have been modified (replaced, edited, moved, …)</li>
+<li>Added audible feedback when extracting files by dragging and dropping.</li>
+<li>Allow filenames to contain ? and *.</li>
+<li>Passwords for save presets are no longer stored in the preset itself, but in the macOS keychain which is a safer place for them.</li>
+</ul>
+</new>
+</body>
+</html>
